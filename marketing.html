@@ -3,24 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minefield Text Example</title>
+<title>Minefield - Puzzle Game</title>
 <style>
   body {
-    background-color: #222;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: rgb(173, 204, 238); /* Swift color */
+    color: #121212; /* dark text for contrast */
+  }
+
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 40vh;
+    text-align: center;
   }
 
   .outlined-text {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    font-weight: 900;          /* like SwiftUI .black */
-    font-stretch: expanded;    /* like SwiftUI .expanded */
-    font-size: 10vw;           /* responsive font size */
-    color: white;              /* foreground fill */
-    text-align: center;
+    font-weight: 900;
+    font-stretch: expanded;
+    font-size: 10vw;
+    color: white;
     line-height: 1;
     text-shadow:
       -1.5px -1.5px 0 black,
@@ -28,10 +35,120 @@
       -1.5px  1.5px 0 black,
        1.5px  1.5px 0 black,
        0px 0px 0.75px black;
+    margin: 0;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+  }
+
+  h2 {
+    color: #121212;
+    margin-top: 2em;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+
+  ul {
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  a.button {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 1em;
+  }
+
+  a.button:hover {
+    background-color: #005bb5;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em 0;
+  }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    color: #121212;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+  }
+
+  .social-links a img {
+    height: 24px;
+    width: auto;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2em 1em;
+    color: #333;
+    border-top: 1px solid #999;
   }
 </style>
 </head>
 <body>
+
+<header>
   <h1 class="outlined-text">MINEFIELD</h1>
+</header>
+
+<main>
+  <p><strong>Challenge your logic. Sharpen your mind. Enjoy endless fun.</strong></p>
+  
+  <p>Minefield brings a modern twist to the classic Minesweeper — designed to help you think deeper, play smarter, and learn as you go.</p>
+  
+  <p>Each level is part of an endless progression, giving you infinite unique puzzles to solve. Use your logic, your instincts, and a bit of strategy to uncover safe tiles, mark mines, and keep your lives intact.</p>
+  
+  <h2>Features:</h2>
+  <ul>
+    <li>Endless levels with increasing challenge</li>
+    <li>Flagger and Magic Reveal buttons for strategic play</li>
+    <li>Unique lives system — learn from mistakes and keep going</li>
+    <li>Two board sizes: Normal (7×7) and Expert (9×9)</li>
+    <li>Tutorial mode for beginners</li>
+    <li>Light and dark mode</li>
+    <li>Smooth animations and a clean, distraction-free design</li>
+  </ul>
+
+  <p>A calm, focused puzzle experience for curious minds.</p>
+
+  <a href="#" class="button">Download Minefield Now</a>
+
+  <!-- Social / App Store Links -->
+  <div class="social-links">
+    <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store Logo">
+      App Store
+    </a>
+    <a href="https://x.com/YOUR_X_USERNAME" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/X_logo_2023.svg" alt="X Logo">
+      X
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Barna Martin Kopácsi. <a href="privacy-policy.html" style="color:#333;">Privacy Policy</a> | <a href="tcs.html" style="color:#333;">Terms of Service</a> | <a href="support.html" style="color:#333;">Support</a></p>
+</footer>
+
 </body>
 </html>
