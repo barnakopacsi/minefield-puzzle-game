@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 10vh;
     text-align: center;
   }
 
@@ -75,12 +75,17 @@
     background-color: #005bb5;
   }
 
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin: 2em 0;
-  }
+  .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  color: #121212;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background: none; /* remove white */
+}
 
   .social-links a {
     display: flex;
@@ -141,15 +146,19 @@
   <p>A calm, focused puzzle experience for curious minds.</p>
 
   <div class="social-links">
-    <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store Logo">
-      App Store
-    </a>
-    <a href="https://x.com/YOUR_X_USERNAME" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/X_logo_2023.svg/1200px-X_logo_2023.svg.png" alt="X Logo" style="height:24px;">
-      X
-    </a>
-  </div>
+  <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store Logo">
+    App Store
+  </a>
+
+  <a href="https://x.com/YOUR_X_USERNAME" target="_blank" style="background:none;">
+    <!-- Inline X SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 248 204">
+      <path fill="#1DA1F2" d="M248 24.6c-9.1 4  ... (truncated for brevity)"></path>
+    </svg>
+    X
+  </a>
+</div>
 </main>
 
 <footer>
